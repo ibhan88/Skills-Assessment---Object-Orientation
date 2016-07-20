@@ -1,3 +1,70 @@
+"""
+Part 1: Discussion
+
+1. What are the three main design advantages that object orientation
+   can provide? Explain each concept.
+
+   ENCAPSULATION: One of the advantages of object orientation is that
+   you can group together data and any methods and behaviors that
+   closely relate to or tie into that data so that they stay close
+   together.
+
+   ABSTRACTION: Another advantage of object orientation is that you
+   can hide the finer details of how something works, so that you
+   do not have to see and work with those finer details all the time.
+
+   POLYMORPHISM: A third advantage of object orientation is the
+   flexibility to use the same method in different places and add
+   slight variations to it. Thus, when the method is called, it is
+   called in the same way, but in reality, a variation of the method
+   is being implemented.
+
+
+2. What is a class?
+
+   A class is a data structure to hold data, methods, and behaviors
+   about the class. This information is then initialized when the
+   class is instantiated.
+
+
+3. What is an instance attribute?
+
+   An instance attribute is data/characteristics that is given to each
+   instance of a class. Thus, these attributes are assigned each time
+   when a class is instantiated.
+
+
+4. What is a method?
+
+   A method is a like a function but it lives within a class. Methods
+   define in which way you can interact with a class.
+
+
+5. What is an instance in object orientation?
+
+   An instance is a specific occurrence of a class.
+
+
+6. How is a class attribute different than an instance attribute?
+   Give an example of when you might use each.
+
+   A class attribute is data/characteristics that is given to the
+   class, so every instance of the class will have that attribute.
+   However, an instance attribute is only applied to each instance of
+   the class.
+
+   For example, if you had a class called Shapes that encompassed
+   many different shapes and their commonality was that they all
+   had lines, lines = True may be a class attribute. A specific
+   occurrence of Shapes is an instance, so a "Circle", a "Square",
+   and a "Trapezoid" may be some instances. If those were their
+   names, then name = "Circle" or name = "Square" are instance
+   attributes. Another instance attribute can be their line type,
+   such as for "Circle", line_type = "curved".
+
+"""
+
+
 class Student(object):
     """Student data - first name, last name, address."""
     def __init__(self, first_name, last_name, address):
